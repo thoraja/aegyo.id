@@ -32,7 +32,7 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('articles', ArticleController::class);
 });
 
-Route::prefix('api')->group(function () {
+Route::prefix('api')->name('api.')->group(function () {
     Route::apiResource('categories', APICategoryController::class);
     Route::apiResource('articles', APIArticleController::class);
 });
