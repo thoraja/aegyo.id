@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Content\ArticleController;
 use App\Http\Controllers\Content\CategoryController;
 
 /*
@@ -26,4 +27,5 @@ require __DIR__.'/auth.php';
 
 Route::middleware(['auth'])->group(function () {
     Route::resource('categories', CategoryController::class);
+    Route::resource('articles', ArticleController::class);
 });
