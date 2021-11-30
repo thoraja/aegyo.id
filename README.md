@@ -1,1 +1,1 @@
-Test case project for Aegyo.id
+Test case project for aegyo.id
